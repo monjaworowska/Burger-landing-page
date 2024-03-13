@@ -63,7 +63,7 @@ nav ul {
     transition: .3s all;
     background-color: #fff3e0;
     width: 60%;
-    height: 100svh;
+    height: 100vh;
     display: flex;
     flex-direction: column;  
     justify-content: flex-start;
