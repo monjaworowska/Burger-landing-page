@@ -70,6 +70,9 @@ nav ul {
     align-items: center; 
 }
 @media screen and (orientaion: portrait){
+    body{
+        height: auto;
+    }
     .menu-bar{
         height: auto;
     }
