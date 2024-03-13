@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Burger landing page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat:wght@700&family=Nunito&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo"><img src="assets/logo.svg" alt="" /></a>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Promo</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="menu-bar">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Promo</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const mobileNav = document.querySelector(".hamburger");
+      const menuBar = document.querySelector(".menu-bar");
+      const toggleNav = () => {
+        mobileNav.classList.toggle("hamburger-active");
+        menuBar.classList.toggle("active");
+      };
+      mobileNav.addEventListener("click", toggleNav, false);
+    </script>
+  </body>
+</html>
